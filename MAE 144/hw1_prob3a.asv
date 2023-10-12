@@ -17,7 +17,7 @@ function [Dz] = EP_C2D_match( Ds, omega_bar, caus )
         end 
 
         if caus == 'strict'
-            zz(end) = [] ;
+            zz[end] = [] ;
         end
     end
     
@@ -27,4 +27,9 @@ function [Dz] = EP_C2D_match( Ds, omega_bar, caus )
 
 end
 
+Ds = RR_tf([-1, -3, -5], [-2, -4, -6, -8, -10]);
+ome = 1;
+causEXP = 'strict';
+
+EP_C2D_match( Ds, ome, causEXP )
 
