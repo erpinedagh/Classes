@@ -1,8 +1,9 @@
 
 clear all 
 clc
-Ds = RR_tf([-1, -3], [-2, -4, -6, -8, -10], 22);
-Cs = zpk([-1, -3], [-2, -4, -6, -8, -10], 22);
+syms z1 p1
+Ds = RR_tf([z1], [-2, -4, p1], 22);
+Cs = zpk([z1], [-2, -4, p1], 22);
 
 ome = 1;
 causexp = "strict"; 
