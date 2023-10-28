@@ -1,0 +1,4 @@
+
+norm_transfer_vec = ((transfer_vec.^(-2))-1).^(1/2);
+norm_f_vec = 2*#.14
+plot(transfer_vec);
