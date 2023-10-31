@@ -19,7 +19,7 @@ xline(18, '--mag', 'LineWidth', 2);
 set(gca,'FontSize',16,'LineWidth',2);
 xlabel('Frequency [Hz]')
 ylabel('Gain [Amplitude]');
-title("Gain vs Frequency");
+title("Gain RC Low-Pass Filter");
 legend("Experimental Data", "Expected Gain", "Gain at Half Power", "Expected Cutoff Freq","Identified Cutoff Freq", 'Location','northeast')
 hold off
  
